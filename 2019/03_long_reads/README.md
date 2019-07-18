@@ -29,7 +29,7 @@
 **Q:** Use/efficacy of long read sequencing of RNA for improved transcriptome assembly?  
 **A:** Certainly an area for improvement. May need to deal with issues with recovering enough material for sufficient coverage and quantitation.
 
-**Q:** In a project to characterize/quantify changes in TE insertions in a haploid cell line (comparing a gene KO vs WT), what is a reasonable estimate for minimum coverage, and is it feasible for a single smaller lab? Ie. with a MinIon. 
+**Q:** In a project to characterize/quantify changes in TE insertions in a haploid cell line (comparing a gene KO vs WT), what is a reasonable estimate for minimum coverage, and is it feasible for a single smaller lab? Ie. with a MinIon.  
 **A:** Yes, it should be possible. Rough estimate would be 50X coverage for a solid de novo genome assembly.  Suggest using a starter kit from Nanopore.
 
 **Q:** Has long-read sequencing improved in its efficacy/application for large-scale pharmogenomics?  
