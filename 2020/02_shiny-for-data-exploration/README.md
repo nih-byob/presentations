@@ -170,8 +170,8 @@ These functions make non-reactive object from reactive inputs.
 - example:
 
 ```
-# here we just take an input number and print it
-# further changes don't change anything
+# here we just take an input number and print it.
+# further changes don't do anything
 
 # isolate input number
 num <- isolate({ input$num })
@@ -235,7 +235,7 @@ server-side.
 - example:
 
 ```
-# here two reactive inputs, input$plotnorm, input$plotclick
+# here two reactive inputs, input$plotnorm, input$plotunif
 # will trigger a different histogram
 rv <- reactiveValues( data = rnorm(100) )
 
