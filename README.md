@@ -11,7 +11,7 @@ For some background on the motivation and goals for NIH BYOB, you can check out 
 #### 2019
 
 - 19/05 [Bioinformatics tips I wish I learned 10 years ago](2019/05_bioinformatics-tips) (Keith Hughitt)
-- 19/06 [Using Singularity Containers for Reproducible Research](06_singularity-for-reproducible-research) (Henoke Shiferaw)
+- 19/06 [Using Singularity Containers for Reproducible Research](2019/06_singularity-for-reproducible-research) (Henoke Shiferaw)
 - 19/07 [Long reads: from mapping to genome assembly](2019/07-long-reads) (Arang Rhie)
 - 19/08 [Organizing Data Science Projects](2019/08_organizing-data-science-projects) (Justin Fear)
 - 19/10 [Cloud Computing for Big Data: NCI’s Data and Cloud Resources](2019/10_cancer-genomics-cloud) (Durga Addepalli & Dave Roberson)
