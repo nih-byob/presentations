@@ -21,6 +21,6 @@ For some background on the motivation and goals for NIH BYOB, you can check out 
 
 - 20/02 [Python in HPC](2020/02_python-in-hpc) (Wolfgang Resch)
 - 20/04 [Python in HPC](2020/02_python-in-hpc) (Wolfgang Resch)
-- 20/05 [Python in HPC](2020/02_python-in-hpc) (Wolfgang Resch)
+- 20/05 [Shiny for Data Exploration](2020/02_shiny-for-data-exploration) (Apratim Mitra)
 - 20/06 [Bioinformatics pipelines using JUDI: Just Do It!](2020/06_pipelines_using_judi) (Soumitra Pal)
 
