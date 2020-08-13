@@ -249,8 +249,8 @@ stanza.download('en', package='craft', processors={'ner': 'bionlp13cg'})
 nlp = stanza.Pipeline('en', package='craft', processors={'ner': 'bionlp13cg'})
 ```
 
-    Downloading https://raw.githubusercontent.com/stanfordnlp/stanza-resources/master/resources_1.0.0.json: 120kB [00:00, 11.0MB/s]                    
-    2020-08-12 10:09:22 INFO: Downloading these customized packages for language: en (English)...
+    Downloading https://raw.githubusercontent.com/stanfordnlp/stanza-resources/master/resources_1.0.0.json: 120kB [00:00, 7.61MB/s]                    
+    2020-08-13 11:44:03 INFO: Downloading these customized packages for language: en (English)...
     ================================
     | Processor       | Package    |
     --------------------------------
@@ -264,16 +264,16 @@ nlp = stanza.Pipeline('en', package='craft', processors={'ner': 'bionlp13cg'})
     | pretrain        | craft      |
     ================================
     
-    2020-08-12 10:09:22 INFO: File exists: /home/keith/stanza_resources/en/tokenize/craft.pt.
-    2020-08-12 10:09:22 INFO: File exists: /home/keith/stanza_resources/en/pos/craft.pt.
-    2020-08-12 10:09:22 INFO: File exists: /home/keith/stanza_resources/en/lemma/craft.pt.
-    2020-08-12 10:09:23 INFO: File exists: /home/keith/stanza_resources/en/depparse/craft.pt.
-    2020-08-12 10:09:23 INFO: File exists: /home/keith/stanza_resources/en/ner/bionlp13cg.pt.
-    2020-08-12 10:09:23 INFO: File exists: /home/keith/stanza_resources/en/backward_charlm/pubmed.pt.
-    2020-08-12 10:09:23 INFO: File exists: /home/keith/stanza_resources/en/forward_charlm/pubmed.pt.
-    2020-08-12 10:09:23 INFO: File exists: /home/keith/stanza_resources/en/pretrain/craft.pt.
-    2020-08-12 10:09:23 INFO: Finished downloading models and saved to /home/keith/stanza_resources.
-    2020-08-12 10:09:23 INFO: Loading these models for language: en (English):
+    2020-08-13 11:44:03 INFO: File exists: /home/keith/stanza_resources/en/tokenize/craft.pt.
+    2020-08-13 11:44:03 INFO: File exists: /home/keith/stanza_resources/en/pos/craft.pt.
+    2020-08-13 11:44:03 INFO: File exists: /home/keith/stanza_resources/en/lemma/craft.pt.
+    2020-08-13 11:44:03 INFO: File exists: /home/keith/stanza_resources/en/depparse/craft.pt.
+    2020-08-13 11:44:03 INFO: File exists: /home/keith/stanza_resources/en/ner/bionlp13cg.pt.
+    2020-08-13 11:44:03 INFO: File exists: /home/keith/stanza_resources/en/backward_charlm/pubmed.pt.
+    2020-08-13 11:44:03 INFO: File exists: /home/keith/stanza_resources/en/forward_charlm/pubmed.pt.
+    2020-08-13 11:44:03 INFO: File exists: /home/keith/stanza_resources/en/pretrain/craft.pt.
+    2020-08-13 11:44:03 INFO: Finished downloading models and saved to /home/keith/stanza_resources.
+    2020-08-13 11:44:03 INFO: Loading these models for language: en (English):
     ==========================
     | Processor | Package    |
     --------------------------
@@ -284,13 +284,13 @@ nlp = stanza.Pipeline('en', package='craft', processors={'ner': 'bionlp13cg'})
     | ner       | bionlp13cg |
     ==========================
     
-    2020-08-12 10:09:23 INFO: Use device: gpu
-    2020-08-12 10:09:23 INFO: Loading: tokenize
-    2020-08-12 10:09:28 INFO: Loading: pos
-    2020-08-12 10:09:29 INFO: Loading: lemma
-    2020-08-12 10:09:29 INFO: Loading: depparse
-    2020-08-12 10:09:29 INFO: Loading: ner
-    2020-08-12 10:09:30 INFO: Done loading processors!
+    2020-08-13 11:44:03 INFO: Use device: cpu
+    2020-08-13 11:44:03 INFO: Loading: tokenize
+    2020-08-13 11:44:03 INFO: Loading: pos
+    2020-08-13 11:44:04 INFO: Loading: lemma
+    2020-08-13 11:44:04 INFO: Loading: depparse
+    2020-08-13 11:44:05 INFO: Loading: ner
+    2020-08-13 11:44:05 INFO: Done loading processors!
 
 
 
@@ -990,10 +990,16 @@ dat.sample(25).sort_values(['type', 'text'])
   </thead>
   <tbody>
     <tr>
-      <th>57</th>
-      <td>2</td>
-      <td>acute myeloid leukemia</td>
+      <th>1252</th>
+      <td>50</td>
+      <td>myeloma</td>
       <td>CANCER</td>
+    </tr>
+    <tr>
+      <th>1009</th>
+      <td>32</td>
+      <td>ATCC</td>
+      <td>CELL</td>
     </tr>
     <tr>
       <th>780</th>
@@ -1002,140 +1008,134 @@ dat.sample(25).sort_values(['type', 'text'])
       <td>CELL</td>
     </tr>
     <tr>
-      <th>1032</th>
-      <td>34</td>
-      <td>Cells</td>
+      <th>511</th>
+      <td>16</td>
+      <td>U266</td>
       <td>CELL</td>
     </tr>
     <tr>
-      <th>1016</th>
-      <td>32</td>
-      <td>HBL-1</td>
-      <td>CELL</td>
-    </tr>
-    <tr>
-      <th>578</th>
-      <td>18</td>
-      <td>MM cells</td>
-      <td>CELL</td>
-    </tr>
-    <tr>
-      <th>343</th>
-      <td>12</td>
-      <td>MM lines</td>
-      <td>CELL</td>
-    </tr>
-    <tr>
-      <th>297</th>
-      <td>11</td>
-      <td>SUDHL-6</td>
-      <td>CELL</td>
-    </tr>
-    <tr>
-      <th>739</th>
-      <td>26</td>
-      <td>cell</td>
-      <td>CELL</td>
-    </tr>
-    <tr>
-      <th>548</th>
-      <td>17</td>
-      <td>cells</td>
-      <td>CELL</td>
-    </tr>
-    <tr>
-      <th>1129</th>
-      <td>38</td>
-      <td>cells</td>
-      <td>CELL</td>
-    </tr>
-    <tr>
-      <th>1215</th>
-      <td>41</td>
-      <td>cells</td>
-      <td>CELL</td>
-    </tr>
-    <tr>
-      <th>225</th>
-      <td>8</td>
-      <td>inner membrane</td>
+      <th>705</th>
+      <td>25</td>
+      <td>mitochondrial</td>
       <td>CELLULAR_COMPONENT</td>
     </tr>
     <tr>
-      <th>458</th>
-      <td>14</td>
-      <td>ATF4</td>
-      <td>GENE_OR_GENE_PRODUCT</td>
-    </tr>
-    <tr>
-      <th>501</th>
-      <td>15</td>
+      <th>520</th>
+      <td>16</td>
       <td>BCL-2</td>
       <td>GENE_OR_GENE_PRODUCT</td>
     </tr>
     <tr>
-      <th>49</th>
-      <td>2</td>
+      <th>398</th>
+      <td>13</td>
       <td>BCL-2</td>
       <td>GENE_OR_GENE_PRODUCT</td>
     </tr>
     <tr>
-      <th>81</th>
-      <td>3</td>
+      <th>13</th>
+      <td>1</td>
+      <td>BCL-2</td>
+      <td>GENE_OR_GENE_PRODUCT</td>
+    </tr>
+    <tr>
+      <th>1058</th>
+      <td>34</td>
+      <td>BCL-2</td>
+      <td>GENE_OR_GENE_PRODUCT</td>
+    </tr>
+    <tr>
+      <th>525</th>
+      <td>16</td>
       <td>BIM</td>
       <td>GENE_OR_GENE_PRODUCT</td>
     </tr>
     <tr>
-      <th>466</th>
-      <td>14</td>
-      <td>BIM</td>
+      <th>200</th>
+      <td>8</td>
+      <td>Complex II</td>
       <td>GENE_OR_GENE_PRODUCT</td>
     </tr>
     <tr>
-      <th>160</th>
-      <td>6</td>
+      <th>802</th>
+      <td>28</td>
       <td>ETC</td>
       <td>GENE_OR_GENE_PRODUCT</td>
     </tr>
     <tr>
-      <th>798</th>
-      <td>27</td>
+      <th>914</th>
+      <td>29</td>
+      <td>NOXA</td>
+      <td>GENE_OR_GENE_PRODUCT</td>
+    </tr>
+    <tr>
+      <th>250</th>
+      <td>9</td>
+      <td>SDH</td>
+      <td>GENE_OR_GENE_PRODUCT</td>
+    </tr>
+    <tr>
+      <th>353</th>
+      <td>12</td>
+      <td>SDH</td>
+      <td>GENE_OR_GENE_PRODUCT</td>
+    </tr>
+    <tr>
+      <th>352</th>
+      <td>12</td>
       <td>SQR</td>
       <td>GENE_OR_GENE_PRODUCT</td>
     </tr>
     <tr>
-      <th>526</th>
-      <td>16</td>
+      <th>818</th>
+      <td>28</td>
       <td>TTFA</td>
       <td>GENE_OR_GENE_PRODUCT</td>
     </tr>
     <tr>
-      <th>540</th>
-      <td>17</td>
-      <td>ubiquinone oxidoreductase</td>
-      <td>GENE_OR_GENE_PRODUCT</td>
-    </tr>
-    <tr>
-      <th>1066</th>
-      <td>35</td>
-      <td>CHAPS</td>
+      <th>968</th>
+      <td>31</td>
+      <td>2,6-dichloroindophenol sodium salt hydrate</td>
       <td>SIMPLE_CHEMICAL</td>
     </tr>
     <tr>
-      <th>1121</th>
+      <th>319</th>
+      <td>12</td>
+      <td>3NPA</td>
+      <td>SIMPLE_CHEMICAL</td>
+    </tr>
+    <tr>
+      <th>1133</th>
       <td>38</td>
-      <td>DCPIP</td>
+      <td>5,5'-dithiobis(2-nitrobenzoic acid</td>
       <td>SIMPLE_CHEMICAL</td>
     </tr>
     <tr>
-      <th>737</th>
-      <td>26</td>
-      <td>glutamine</td>
+      <th>1231</th>
+      <td>43</td>
+      <td>NAO</td>
       <td>SIMPLE_CHEMICAL</td>
     </tr>
     <tr>
-      <th>625</th>
-      <td>21</td>
+      <th>915</th>
+      <td>29</td>
+      <td>TTFA</td>
+      <td>SIMPLE_CHEMICAL</td>
+    </tr>
+    <tr>
+      <th>1119</th>
+      <td>38</td>
+      <td>decylubiquinone</td>
+      <td>SIMPLE_CHEMICAL</td>
+    </tr>
+    <tr>
+      <th>138</th>
+      <td>5</td>
+      <td>fumarate</td>
+      <td>SIMPLE_CHEMICAL</td>
+    </tr>
+    <tr>
+      <th>931</th>
+      <td>30</td>
       <td>venetoclax</td>
       <td>SIMPLE_CHEMICAL</td>
     </tr>
